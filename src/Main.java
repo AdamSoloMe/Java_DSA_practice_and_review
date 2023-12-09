@@ -17,6 +17,9 @@ public class Main {
         myHeap.insert(100);
 
         System.out.println(myHeap.getHeap());
+        System.out.println(myHeap.getHeap());
+
+        System.out.println("hello");
 
 
     }
