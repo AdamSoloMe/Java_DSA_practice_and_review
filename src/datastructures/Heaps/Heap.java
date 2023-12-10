@@ -35,15 +35,16 @@ public class Heap { //how to build a  Binary heap data Structure using an arrayl
     }
 
     //Prints out the heao
-     public List<Integer> getHeap(){
-        return new ArrayList<>(heap);
-    }
+
 
     private int getRightChild(int index){
         return  2*index+2;
     }
     private int getParent(int index){
         return (index-1)/2;
+    }
+    public List<Integer> getHeap(){
+        return new ArrayList<>(heap);
     }
 
     private void swapNodes(int index1, int index2){// this helper method swaps the positons of 2 nodes
@@ -55,11 +56,11 @@ public class Heap { //how to build a  Binary heap data Structure using an arrayl
     public void insert(int value){//this code is actually doing 2 things
        heap.add(value);//inserts a new value at the end of the arraylist
        int current=heap.size()-1;//pointer to the last index in the arraylist we are using as the heap
-        swimNodeUp(current);
+        swimNodeUp(current); // then call the swimup method
 
     }
 
-    public void swimNodeUp(int current){
+    public void swimNodeUp(int current){ //this method works to swap a child node with it's parent untill the heap ordering property is reestablishe
         while (current>0 && heap.get(current)> heap.get(getParent(current))){
             // while current is greater than the root node/the starting node
             // and the child node that current is checking is larger than the parent

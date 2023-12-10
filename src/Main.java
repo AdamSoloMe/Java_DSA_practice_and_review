@@ -1,4 +1,7 @@
-package datastructures.Heaps;
+import datastructures.Hashtables.HashTable;
+import datastructures.Heaps.Heap;
+
+import java.util.PriorityQueue;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,6 +42,21 @@ public class Main {
 //        System.out.println(mySecondHeap.getHeap());
 //        mySecondHeap.removeNode();
 //        System.out.println(mySecondHeap.getHeap());
+//        PriorityQueue<Integer> pq= new PriorityQueue<Integer>();
+//        pq.
+
+        HashTable myHashTable= new HashTable();
+        //myHashTable.printTable();
+
+        myHashTable.set("nails",100);
+        myHashTable.set("tile",50);
+        myHashTable.set("lumber",80);
+
+        myHashTable.set("bolts",200);
+        myHashTable.set("screws", 140);
+        myHashTable.printTable();
+        System.out.println(myHashTable.keys());
+        System.out.println(myHashTable.get("nails"));
 
 
 
