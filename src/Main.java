@@ -1,7 +1,6 @@
+import datastructures.Hashtables.BasicHashTable;
 import datastructures.Hashtables.HashTable;
 import datastructures.Heaps.Heap;
-
-import java.util.PriorityQueue;
 
 public class Main {
     public static void main(String[] args) {
@@ -45,7 +44,7 @@ public class Main {
 //        PriorityQueue<Integer> pq= new PriorityQueue<Integer>();
 //        pq.
 
-        HashTable myHashTable= new HashTable();
+        BasicHashTable myHashTable= new BasicHashTable();
         //myHashTable.printTable();
 
         myHashTable.set("nails",100);
@@ -57,6 +56,12 @@ public class Main {
         myHashTable.printTable();
         System.out.println(myHashTable.keys());
         System.out.println(myHashTable.get("nails"));
+
+        HashTable myImprovedHashTable=new HashTable();
+        myImprovedHashTable.put(32,"John");
+        myImprovedHashTable.put(42,"richard");
+        myImprovedHashTable.put(56,"howard");
+        myImprovedHashTable.printTable();
 
 
 
