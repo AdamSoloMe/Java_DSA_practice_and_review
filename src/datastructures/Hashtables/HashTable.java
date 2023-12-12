@@ -32,7 +32,10 @@ public class HashTable {
         }
 
 
-
+        @Override
+        public String toString() {
+            return "{" + "key =" + key + " value = "+value+ "}";
+        }
     }
 
     public int getSize(){
@@ -97,7 +100,9 @@ public class HashTable {
             buckets[bucketIndex]=head.next;
         }
 
-        return head.value;
+        String removedNodeData= head.toString();
+
+        return removedNodeData;
     }
 
 
@@ -108,7 +113,7 @@ public class HashTable {
     }
 
     public  void  printTable(){
-        for(int i=0; i <buckets.length; i++){
+        for(int i=0; i < buckets.length; i++){
             System.out.println(i+":");
             HashNode temp=buckets[i];
             while (temp != null){
