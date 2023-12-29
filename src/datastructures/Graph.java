@@ -35,8 +35,14 @@ public class Graph {
         }
         return stringBuilder.toString();
     }
+    // TODO: look into StringBuilder
     // TODO: add Depth First Search Traversal
      // TODO: addBreadth first Search Traversal
+    // TODO: add Dijkstra's Alogorithim
+    // TODO: add Prim's Alogorithim
+    // TODO: add Kruskal's Alogorithim
+    // TODO: add Trees
+
 
 
 
