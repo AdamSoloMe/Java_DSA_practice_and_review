@@ -61,6 +61,7 @@ public class BinarySearchTree {
         if(root == null){
             return 0;
         }
+        //using in-order traversal
         getSumofRange(root.left,low,high);
 
         if(root.data >=low && root.data<= high){
