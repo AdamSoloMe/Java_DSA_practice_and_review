@@ -17,6 +17,14 @@ public class BinarySearchTree {
             this.data=data;
         }
 
+        @Override
+        public String toString() {
+            return "TreeNode{" +
+                    "data=" + data +
+                    ", left=" + left +
+                    ", right=" + right +
+                    '}';
+        }
     }
     public void insert(int value){
         root=insert(root,value);
@@ -65,6 +73,17 @@ public class BinarySearchTree {
 
 
 
+    }
+
+    public  TreeNode search(TreeNode root,int key){
+        if(root == null || root.data==key){
+            return root;
+        }
+        if(key <root.data){
+            return search(root.left,key);
+        } else {
+            return search(root.right,key);
+        }
     }
 
 

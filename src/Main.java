@@ -153,6 +153,7 @@ public class Main {
 
         System.out.println(bst.getSumofRange(bst.getRoot(), 6,15));
         System.out.println(bst.altSolution(bst.getRoot(), 6,15));
+        System.out.println(bst.search(bst.getRoot(), 16));
 
 
 
