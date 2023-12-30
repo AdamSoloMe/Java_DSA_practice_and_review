@@ -1,3 +1,4 @@
+import datastructures.BinaryTrees.BinaryTree;
 import datastructures.LinkedLists.CircularSinglyLinkedList;
 import datastructures.StacksAndQueues.Queues.MyQueue;
 import datastructures.StacksAndQueues.Stacks.MyArrayStack;
@@ -136,16 +137,34 @@ public class Main {
 //        graph.addEdgeBetweenVertices(3,0);
 //        System.out.println(graph);
 
-//        BinaryTree binaryTree=new BinaryTree();
-//        binaryTree.createBinaryTree();
-//        System.out.println("Pre-order traversal");
-//        binaryTree.preOrderRec(binaryTree.getRoot());
-//        System.out.println("\n");
-//        System.out.println("in-order traversal");
-//        binaryTree.inOrderRec(binaryTree.getRoot());
-//        System.out.println("\n");
-//        System.out.println("Post-order traversal");
-//        binaryTree.postOrderRec(binaryTree.getRoot());
+        BinaryTree binaryTree=new BinaryTree();
+        binaryTree.createBinaryTree();
+        System.out.println("Pre-order traversal, Recursive");
+        binaryTree.preOrderRec(binaryTree.getRoot());
+
+        System.out.println("\n");
+        System.out.println("Pre-order traversal, Iterative");
+
+        binaryTree.preOrderIter(binaryTree.getRoot());
+        //TODO: Step Through Iterative Pre-order Traversal
+        System.out.println("\n");
+        System.out.println("in-order traversal-recursive");
+        binaryTree.inOrderRec(binaryTree.getRoot());
+
+        System.out.println("\n");
+        System.out.println("in-order traversal-iterative");
+        binaryTree.inOrderTraveralIter(binaryTree.getRoot());
+
+        System.out.println("\n");
+        System.out.println("Post-order traversal, recusirve");
+        binaryTree.postOrderRec(binaryTree.getRoot());
+
+        System.out.println("\n");
+        System.out.println("Post-order traversal, iterative");
+        binaryTree.postOrderIter(binaryTree.getRoot());
+
+
+
 //
 //        System.out.println("\n");
 //
@@ -233,13 +252,13 @@ public class Main {
 //        myArrayStack.push(2);
 //        myArrayStack.push(1);
 //        System.out.println(myArrayStack.isFull());
-        MyQueue queue=new MyQueue();
-
-        queue.enqueue(32);
-        queue.enqueue(45);
-        queue.enqueue(65);
-        System.out.println(queue.dequeue());
-        queue.print();
+//        MyQueue queue=new MyQueue();
+//
+//        queue.enqueue(32);
+//        queue.enqueue(45);
+//        queue.enqueue(65);
+//        System.out.println(queue.dequeue());
+//        queue.print();
 
 
 
