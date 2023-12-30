@@ -1,11 +1,8 @@
-import datastructures.BinaryTrees.BinarySearchTree;
-import datastructures.BinaryTrees.BinaryTree;
-import datastructures.LinkedLists.CircularDoublyLinkedList;
 import datastructures.LinkedLists.CircularSinglyLinkedList;
-import datastructures.StacksAndQueues.MyArrayStack;
-import datastructures.StacksAndQueues.MyLinkedListStack;
+import datastructures.StacksAndQueues.Queues.MyQueue;
+import datastructures.StacksAndQueues.Stacks.MyArrayStack;
+import datastructures.StacksAndQueues.Stacks.MyLinkedListStack;
 
-import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -205,37 +202,44 @@ public class Main {
 //        circularDoublyLinkedList.displayList();
 //        circularDoublyLinkedList.deleteLast();
 //        circularDoublyLinkedList.displayList();
-        MyLinkedListStack myLinkedListStack=new MyLinkedListStack();
-        myLinkedListStack.push(1);
-        myLinkedListStack.push(2);
-        myLinkedListStack.push(3);
-        myLinkedListStack.push(4);
-        myLinkedListStack.push(5);
-        while (!myLinkedListStack.isEmpty()){
-            System.out.print(myLinkedListStack.pop()+" ");
-        }
-        System.out.println("\n");
+//        MyLinkedListStack myLinkedListStack=new MyLinkedListStack();
+//        myLinkedListStack.push(1);
+//        myLinkedListStack.push(2);
+//        myLinkedListStack.push(3);
+//        myLinkedListStack.push(4);
+//        myLinkedListStack.push(5);
+//        while (!myLinkedListStack.isEmpty()){
+//            System.out.print(myLinkedListStack.pop()+" ");
+//        }
+//        System.out.println("\n");
+//
+//        MyArrayStack myArrayStack= new MyArrayStack();
+//        myArrayStack.push(5);
+//        myArrayStack.push(4);
+//        myArrayStack.push(3);
+//        myArrayStack.push(2);
+//        myArrayStack.push(1);
+//        while (!myArrayStack.isEmpty()){
+//            System.out.print(myArrayStack.pop()+" ");
+//        }
+//        myArrayStack.push(10);
+//        myArrayStack.push(9);
+//        myArrayStack.push(8);
+//        myArrayStack.push(7);
+//        myArrayStack.push(6);
+//        myArrayStack.push(5);
+//        myArrayStack.push(4);
+//        myArrayStack.push(3);
+//        myArrayStack.push(2);
+//        myArrayStack.push(1);
+//        System.out.println(myArrayStack.isFull());
+        MyQueue queue=new MyQueue();
 
-        MyArrayStack myArrayStack= new MyArrayStack();
-        myArrayStack.push(5);
-        myArrayStack.push(4);
-        myArrayStack.push(3);
-        myArrayStack.push(2);
-        myArrayStack.push(1);
-        while (!myArrayStack.isEmpty()){
-            System.out.print(myArrayStack.pop()+" ");
-        }
-        myArrayStack.push(10);
-        myArrayStack.push(9);
-        myArrayStack.push(8);
-        myArrayStack.push(7);
-        myArrayStack.push(6);
-        myArrayStack.push(5);
-        myArrayStack.push(4);
-        myArrayStack.push(3);
-        myArrayStack.push(2);
-        myArrayStack.push(1);
-        System.out.println(myArrayStack.isFull());
+        queue.enqueue(32);
+        queue.enqueue(45);
+        queue.enqueue(65);
+        System.out.println(queue.dequeue());
+        queue.print();
 
 
 
