@@ -2,7 +2,10 @@ import datastructures.BinaryTrees.BinarySearchTree;
 import datastructures.BinaryTrees.BinaryTree;
 import datastructures.LinkedLists.CircularDoublyLinkedList;
 import datastructures.LinkedLists.CircularSinglyLinkedList;
+import datastructures.StacksAndQueues.MyArrayStack;
+import datastructures.StacksAndQueues.MyLinkedListStack;
 
+import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -192,16 +195,48 @@ public class Main {
 //        circularSinglyLinkedList.deleteFirst();
 //        circularSinglyLinkedList.displayList();
 //        System.out.println(circularSinglyLinkedList.getListSize());
+//
+//        CircularDoublyLinkedList circularDoublyLinkedList=new CircularDoublyLinkedList();
+//
+//        circularDoublyLinkedList.insertLast(1);
+//        circularDoublyLinkedList.insertLast(5);
+//        circularDoublyLinkedList.insertLast(10);
+//        circularDoublyLinkedList.insertLast(15);
+//        circularDoublyLinkedList.displayList();
+//        circularDoublyLinkedList.deleteLast();
+//        circularDoublyLinkedList.displayList();
+        MyLinkedListStack myLinkedListStack=new MyLinkedListStack();
+        myLinkedListStack.push(1);
+        myLinkedListStack.push(2);
+        myLinkedListStack.push(3);
+        myLinkedListStack.push(4);
+        myLinkedListStack.push(5);
+        while (!myLinkedListStack.isEmpty()){
+            System.out.print(myLinkedListStack.pop()+" ");
+        }
+        System.out.println("\n");
 
-        CircularDoublyLinkedList circularDoublyLinkedList=new CircularDoublyLinkedList();
+        MyArrayStack myArrayStack= new MyArrayStack();
+        myArrayStack.push(5);
+        myArrayStack.push(4);
+        myArrayStack.push(3);
+        myArrayStack.push(2);
+        myArrayStack.push(1);
+        while (!myArrayStack.isEmpty()){
+            System.out.print(myArrayStack.pop()+" ");
+        }
+        myArrayStack.push(10);
+        myArrayStack.push(9);
+        myArrayStack.push(8);
+        myArrayStack.push(7);
+        myArrayStack.push(6);
+        myArrayStack.push(5);
+        myArrayStack.push(4);
+        myArrayStack.push(3);
+        myArrayStack.push(2);
+        myArrayStack.push(1);
+        System.out.println(myArrayStack.isFull());
 
-        circularDoublyLinkedList.insertLast(1);
-        circularDoublyLinkedList.insertLast(5);
-        circularDoublyLinkedList.insertLast(10);
-        circularDoublyLinkedList.insertLast(15);
-        circularDoublyLinkedList.displayList();
-        circularDoublyLinkedList.deleteLast();
-        circularDoublyLinkedList.displayList();
 
 
 
